@@ -1,0 +1,16 @@
+┌──(kali㉿kali)-[/home]
+└─$ sudo groupadd necessary
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo usermod -aG necessary ojie
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo groups ojie               
+ojie : ojie users important necessary
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo groupdel necessary
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo groups ojie       
+ojie : ojie users important
