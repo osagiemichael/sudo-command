@@ -1,0 +1,51 @@
+┌──(kali㉿kali)-[/home]
+└─$ ll
+total 8
+drwx------ 32 kali kali 4096 Feb 26 09:02 kali
+drwx------  5 ojie ojie 4096 Feb 26 09:04 ojie
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo adduser racheal
+info: Adding user `racheal' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `racheal' (1005) ...
+info: Adding new user `racheal' (1005) with group `racheal (1005)' ...
+info: Creating home directory `/home/racheal' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for racheal
+Enter the new value, or press ENTER for the default
+        Full Name []: racheal
+        Room Number []: 134
+        Work Phone []: 0147852
+        Home Phone []: 025478962
+        Other []: nil
+Is the information correct? [Y/n] y
+info: Adding new user `racheal' to supplemental / extra groups `users' ...
+info: Adding user `racheal' to group `users' ...
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo groupadd necessary
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo usermod -aG necessary racheal
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo usermod -aG important racheal
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo groups racheal               
+racheal : racheal users important necessary
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo groups ojie   
+ojie : ojie users important
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo usermod -aG necessary ojie   
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo groups ojie               
+ojie : ojie users important necessary
