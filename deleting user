@@ -1,0 +1,22 @@
+┌──(kali㉿kali)-[/home]
+└─$ sudo deluser aletor
+info: Removing crontab ...
+info: Removing user `aletor' ...
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ ll
+total 16
+drwx------  5    1007    1007 4096 Feb 26 09:37 aletor
+drwx------ 32 kali    kali    4096 Feb 26 09:02 kali
+drwx------  5 ojie    ojie    4096 Feb 26 09:04 ojie
+drwx------  5 racheal racheal 4096 Feb 26 09:15 racheal
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ sudo rm -rf aletor 
+                                                                                        
+┌──(kali㉿kali)-[/home]
+└─$ ll
+total 12
+drwx------ 32 kali    kali    4096 Feb 26 09:02 kali
+drwx------  5 ojie    ojie    4096 Feb 26 09:04 ojie
+drwx------  5 racheal racheal 4096 Feb 26 09:15 racheal
