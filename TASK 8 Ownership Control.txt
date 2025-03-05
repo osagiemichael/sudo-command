@@ -1,0 +1,19 @@
+TASK 8: Ownership Control 
+Objective: Change file ownership.
+🔹 Task:
+	Create a file testfile.txt.
+	Change its ownership to another user (if available) or a new test user.
+	Verify the ownership change.
+
+
+
+┌──(kali㉿kali)-[~]
+└─$ touch testfile.txt           
+                                                                                        
+┌──(kali㉿kali)-[~]
+└─$ sudo chown ojie testfile.txt
+[sudo] password for kali: 
+                                                                                         
+┌──(kali㉿kali)-[~]
+└─$ ls -l testfile.txt
+-rw-rw-r-- 1 ojie kali 0 Mar  2 01:51 testfile.txt

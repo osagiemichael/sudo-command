@@ -1,0 +1,23 @@
+TASK 1: Permission Breakdown  
+Objective: Create files and set specific permissions.
+🔹 Task:
+	Create three files: alpha.txt, beta.txt, and gamma.txt.
+	Set their permissions as follows:
+	alpha.txt: Only the owner can read and write.
+	beta.txt: Everyone can read but only the owner can write.
+	gamma.txt: Only the owner can execute, no other access.
+	Verify the permissions.
+
+
+┌──(kali㉿kali)-[~]
+└─$ touch alpha.txt beta.txt gamma.txt
+                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ chmod g-r,o-r alpha.txt
+                                                                                        
+┌──(kali㉿kali)-[~]
+└─$ chmod g-w beta.txt     
+                                                                                        
+┌──(kali㉿kali)-[~]
+└─$ chmod u+x gamma.txt
+                                                                                        

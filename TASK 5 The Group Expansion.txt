@@ -1,0 +1,19 @@
+TASK 5: The Group Expansion 
+Objective: Modify user groups.
+🔹 Task:
+	Create a group called devteam.
+	Add yourself to devteam.
+	Verify that you are now a member of devteam.
+
+
+
+
+┌──(kali㉿kali)-[/home]
+└─$ sudo groupadd devteam
+                                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ sudo usermod -aG devteam ojie
+                                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ sudo groups ojie             
+ojie : ojie users important devteam

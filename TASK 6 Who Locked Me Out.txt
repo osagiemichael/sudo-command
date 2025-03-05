@@ -1,0 +1,39 @@
+TASK 6: Who Locked Me Out? 
+Objective: Disable and enable a user account.
+🔹 Task:
+	Create a user testuser.
+	Lock their account.
+	Verify that they are locked.
+	Unlock their account.
+
+
+
+┌──(kali㉿kali)-[/home]
+└─$ sudo adduser testuser  
+info: Adding user `testuser' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `testuser' (1007) ...
+info: Adding new user `testuser' (1007) with group `testuser (1007)' ...
+info: Creating home directory `/home/testuser' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for testuser
+Enter the new value, or press ENTER for the default
+        Full Name []: testuser
+        Room Number []: 11
+        Work Phone []: 123
+        Home Phone []: 1234
+        Other []: nil  
+Is the information correct? [Y/n] y
+info: Adding new user `testuser' to supplemental / extra groups `users' ...
+info: Adding user `testuser' to group `users' ...
+                                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ sudo passwd -l testuser
+passwd: password changed.
+                                                                                          
+┌──(kali㉿kali)-[/home]
+└─$ sudo passwd -S testuser
+testuser L 2025-03-02 0 99999 7 -1

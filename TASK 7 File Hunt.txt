@@ -1,0 +1,16 @@
+TASK 7: File Hunt 
+Objective: Locate specific files.
+🔹 Task:
+	Find all .txt files in your home directory.
+	Find all files that were modified in the last 24 hours.
+	Find all empty files in your system.
+
+
+
+┌──(kali㉿kali)-[/home]
+└─$ find ~/ -type f -name "*.txt"
+                                                                                          
+┌──(kali㉿kali)-[~]
+└─$ find ~/ -type f -mtime -1
+┌──(kali㉿kali)-[~]
+└─$ find . -type f -empty

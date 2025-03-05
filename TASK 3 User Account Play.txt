@@ -1,0 +1,33 @@
+TASK 3: User Account Play 
+Objective: Create a new user and modify its details.
+🔹 Task:
+	Create a user named experiment.
+	Change their shell to /bin/zsh.
+	Set a password for experiment.
+	Verify the changes.
+
+
+──(kali㉿kali)-[~]
+└─$ sudo adduser experiment                         
+info: Adding user `experiment' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `experiment' (1006) ...
+info: Adding new user `experiment' (1006) with group `experiment (1006)' ...
+info: Creating home directory `/home/experiment' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for experiment
+Enter the new value, or press ENTER for the default
+        Full Name []: experiment
+        Room Number []: 112
+        Work Phone []: 121
+        Home Phone []: 123
+        Other []: nil
+Is the information correct? [Y/n] y
+info: Adding new user `experiment' to supplemental / extra groups `users' ...
+info: Adding user `experiment' to group `users' ...
+                                                   
+┌──(kali㉿kali)-[~]
+└─$ sudo chsh -s /bin/zsh experiment  

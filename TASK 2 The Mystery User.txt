@@ -1,0 +1,24 @@
+TASK 2: The Mystery User 
+Objective: Identify user details.
+🔹 Task:
+	Find out your current username using a command.
+	Check your UID and GID.
+	List all groups you belong to.
+ Hint: Everything you need is in id and /etc/passwd.
+
+
+┌──(kali㉿kali)-[~]
+└─$ pwd
+/home/kali
+                                                                                        
+┌──(kali㉿kali)-[~]
+└─$ cat /etc/passwd
+
+kali:x:1000:1000:,,,:/home/kali:/usr/bin/zsh
+UID :- 1000
+GID :- 1000
+
+┌──(kali㉿kali)-[~]
+└─$ sudo groups kali      
+kali : kali adm dialout cdrom floppy sudo audio dip video plugdev users netdev bluetooth scanner wireshark kaboxer vboxsf
+
